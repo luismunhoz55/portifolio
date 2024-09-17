@@ -35,3 +35,7 @@ html,
   font-display: swap;
   font-style: normal;
 }
+
+.icon {
+  @apply max-w-[70px];
+}

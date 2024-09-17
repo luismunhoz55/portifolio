@@ -7,6 +7,9 @@ export default {
         "courier-new": "'Courier New', serif",
         impact: "'Impact', sans-serif",
       },
+      screens: {
+        pc: "960px",
+      },
     },
   },
   plugins: [],

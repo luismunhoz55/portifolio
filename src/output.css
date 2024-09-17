@@ -594,6 +594,15 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
@@ -602,8 +611,21 @@ video {
   width: 300px;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .max-w-\[450px\] {
@@ -612,6 +634,10 @@ video {
 
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .gap-6 {
@@ -635,8 +661,13 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[url\(\'\/spiderman-bg\.png\'\)\] {
-  background-image: url('/spiderman-bg.png');
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/spiderman-bg-phone\.png\'\)\] {
+  background-image: url('/spiderman-bg-phone.png');
 }
 
 .bg-cover {
@@ -647,14 +678,14 @@ video {
   background-repeat: no-repeat;
 }
 
-.px-\[120px\] {
-  padding-left: 120px;
-  padding-right: 120px;
+.px-\[32px\] {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.py-\[75px\] {
-  padding-top: 75px;
-  padding-bottom: 75px;
+.py-\[48px\] {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .font-courier-new {
@@ -679,6 +710,10 @@ video {
 
 .text-\[29px\] {
   font-size: 29px;
+}
+
+.leading-\[120px\] {
+  line-height: 120px;
 }
 
 .leading-\[240px\] {
@@ -734,4 +769,110 @@ html,
   font-display: swap;
 
   font-style: normal;
+}
+
+.icon {
+  max-width: 70px;
+}
+
+@media (min-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:left-auto {
+    left: auto;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:top-auto {
+    top: auto;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .md\:py-\[56px\] {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .md\:text-\[120px\] {
+    font-size: 120px;
+  }
+
+  .md\:leading-\[144px\] {
+    line-height: 144px;
+  }
+}
+
+@media (min-width: 960px) {
+  .pc\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .pc\:max-w-\[450px\] {
+    max-width: 450px;
+  }
+
+  .pc\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .pc\:bg-\[url\(\'\/spiderman-bg\.png\'\)\] {
+    background-image: url('/spiderman-bg.png');
+  }
+
+  .pc\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .pc\:py-\[75px\] {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .pc\:text-\[200px\] {
+    font-size: 200px;
+  }
+
+  .pc\:leading-\[240px\] {
+    line-height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }
